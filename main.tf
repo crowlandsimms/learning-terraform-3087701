@@ -57,7 +57,7 @@ module "blog-alb" {
 
   target_groups = [
     {
-      name_prefix      = "ciara-blog-"
+      name_prefix      = "cblog-"
       backend_protocol = "HTTP"
       backend_port     = 80
       target_type      = "instance"
