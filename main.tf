@@ -66,13 +66,6 @@ module "blog_alb" {
       backend_protocol = "HTTP"
       backend_port     = 80
       target_type      = "instance"
-      targets = {
-        my_target = {
-          # tells load balancer what instance id to send the traffic to
-          target_id = aws_instance.blog.id
-          port = 80
-        }
-      }
     }
   ]
 
