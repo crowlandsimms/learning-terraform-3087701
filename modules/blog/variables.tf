@@ -26,7 +26,7 @@ variable "environment" {
         })
 
         default = {
-            name = "ciara-dev"
+            name = "cdev"
             network_prefix = "10.0"
         }
 
