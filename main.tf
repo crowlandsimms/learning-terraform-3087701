@@ -88,7 +88,7 @@ module "blog_sg" {
   version = "4.16.2"
   name = "ciara_terraform_blog"
 
-  vpc_id = module.blog_vpc.public_subnets[0]
+  vpc_id = module.blog_vpc.vpc_id
 
   ingress_rules = ["http-80-tcp", "https-443-tcp"]
   ingress_cidr_blocks = ["198.102.62.250/32", "198.102.58.250/32"]
